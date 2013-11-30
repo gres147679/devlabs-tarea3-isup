@@ -48,8 +48,27 @@ save, que vuelve a una instancia de clase persistente guardándola en la DB)
 
 ¿Para que se utilizan PIP y Bundler?, si no utilizas python o ruby, ¿cuál sería la
 alternativa para tu lenguaje?
-Ambos son manejadores de librerías de Python y Ruby respectivamente,
+Ambos son manejadores de librerías de Python y Ruby respectivamente, que se
+encargan de descargar dichas librerías en una carpeta del sistema (que se 
+encuentra en el PYTHONPATH o RUBYPATH según sea el caso) de forma que puedan
+usarse fácilmente en un código cualquiera. Pienso usar Python, pero si
+quisiera usar otro lenguaje (eg Haskell) pudiera usar Cabal
 
 ¿Qué es un Requirements file y un Gemfile? ¿Para qué los usarías en una aplicación?
+Ambos son archivos de texto que se colocan el el directorio raíz de un proyecto
+de Python o Ruby respectivamente, y que contienen una lista de los paquetes/gemas
+que se requieren para la ejecución del proyecto que se desarrolla. En caso
+de que se esté desarrollando un proyecto Web en el que se requiera cierta
+funcionalidad, para la que no se cuenta con el tiempo/energía/necesidad
+de programarla, puede ser de utilidad recurrir a código ya desarrollado
+por otros programadores, y (de preferencia) que se encuentre disponible
+a través de repositorios, como Bundler o Pip. Un requirements file/gemfile
+se vuelve la forma más versátil y rápida de comunicarle al resto del
+equipo, o en futuro al usuario final, sobre los requerimientos de
+paquetes para correr el sitio con éxito.
+
+
 Genera una una clave ssh y envía el archivo .pub a devlabs­usb@talpor.com
+
+Está en el repo por si acaso, pero igual la anexo por correo
 
