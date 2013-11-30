@@ -1,0 +1,55 @@
+1)¿Qué problema resuelven las herramientas virtualenv y RVM (o rbenv)? ¿Para qué
+lenguaje se utiliza cada una? si no utilizas python o ruby, ¿cuál sería la alternativa para tu
+lenguaje?
+
+Todas estas son herramientas que permiten mantener entornos de trabajo
+aislados, de forma que se puedan tener distintas versiones de paquetes,
+intérpretes o compiladores según el proyecto en el que se esté trabajando.
+A pesar de que muchos SO proveen herramientas para manejar distintas versiones
+de compiladores para el mismo lenguaje (eg. alternatives en Linux), con
+algunos compiladores/intérpretes se incluye un gestor de paquetes, lo cual
+complica un poco el manejar distintas versiones. Con virtualenv, por ejemplo,
+pudiera crear un entorno con Python2.6 y psycopg2-2.3, en paralelo con un
+entorno con las versiones más recientes de todos los paquetes. Virtualenv,
+como dije, funciona para Python, y RVm-Rbenv para Ruby
+
+
+2) ¿Qué framework piensas usar?
+Para este proyecto, considerando el corto tiempo de desarrollo y el dominio
+previo que he adquirido, planeo usar Django
+
+3) ¿Qué patrón de diseño utiliza ese framework?
+Utiliza el patrón MTV (Model-Template-View). Es una variación del patrón MVC,
+en el sentido de que se conservan las capas de Vista (presentación del sitio
+Web) y Modelo (Clases/Objetos que representan las cualidades del mundo real
+que el sitio debe manejar/almacenar/desplegar), pero al permitir que los modelos
+sean representados mediante atributos previamente definidos, ajustándolos a
+una plantilla, se elimina la necesidad de un controlador que maneje la
+transferencia de datos entre las capas.
+
+4) En el framework seleccionado, ¿cómo se crea la relación entre las tablas de la base de
+datos y las clases definidas?
+Como Django facilita el trabajo mediante la capa Template, vincular las clases con
+tablas en una base de datos es casi trivial. Todo empieza con definir, en el 
+archivo models.py de la aplicación que se desarrolla, tantas clases como se
+desee, heredando de models.Model. Estas clases puede contener cualquier atributo,
+pero para aprovechar al máximo el patrón MTV y el ORM de Django se recomienda
+utilizar las plantillas de atributos. (pueden consultarse
+en https://docs.djangoproject.com/en/dev/ref/models/fields/)
+En segundo lugar, invocando el script de proyecto manage.py con el argumento
+syncdb, el controlador interno de Django se encarga de verificar la validez
+de las clases especificadas, y traducir esto al Modelo Relacional, de forma
+que puedan crearse las tablas requeridas en la base de datos especificada.
+
+Luego de definir todas las clases, en cualquier archivo del App se puede
+hacer llamadas a métodos heredados de models.Model, que son capaces de manejar
+cada instancia de la clase y llevarla a la DB, y vice-versa (eg. el método
+save, que vuelve a una instancia de clase persistente guardándola en la DB)
+
+¿Para que se utilizan PIP y Bundler?, si no utilizas python o ruby, ¿cuál sería la
+alternativa para tu lenguaje?
+Ambos son manejadores de librerías de Python y Ruby respectivamente,
+
+¿Qué es un Requirements file y un Gemfile? ¿Para qué los usarías en una aplicación?
+Genera una una clave ssh y envía el archivo .pub a devlabs­usb@talpor.com
+
