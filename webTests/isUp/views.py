@@ -13,11 +13,11 @@ def scan(request):
 	if request.method == 'POST':
 		website = models.WebSite(request.POST)
 		if website.is_valid():
-			return HttpResponseRedirect('/thanks/') # Redirect after POST
+			return HttpResponseRedirect('/isUp/results/') # Redirect after POST
 	else:
 		website = models.WebSite() # An unbound form
 
 	template = loader.get_template('isUp/index.html')
-	return render(request, 'index.html', {
+	return render(request, 'isUp/index.html', {
         'website': website,
     })
