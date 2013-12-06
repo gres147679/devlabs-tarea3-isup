@@ -13,7 +13,7 @@ def scan(request):
 	if request.method == 'POST':
 		website = models.WebSite(request.POST)
 		if website.is_valid():
-			return HttpResponseRedirect('/isUp/results/') # Redirect after POST
+			#return HttpResponseRedirect('/isUp/results/') # Redirect after POST
 	else:
 		website = models.WebSite() # An unbound form
 
