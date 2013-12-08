@@ -1,4 +1,5 @@
 from django import forms
+from django.core.validators import URLValidator
 import httplib, socket
 
 # Create your models here.
@@ -8,7 +9,7 @@ import httplib, socket
 class WebSite(forms.Form):
 
 	'''Address of the WebSite'''
-	siteAddress = forms.URLField(required=True,label="Site address")
+	siteAddress = forms.URLField(required=True,label="Site address",validators=[URLValidator])
 
 	def is_valid(self):
 		return True

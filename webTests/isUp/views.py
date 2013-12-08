@@ -9,22 +9,20 @@ from django.shortcuts import render
 def index(request):
     return HttpResponse("Hello, world. You're at the poll index.")
 
-def good(request):
-    return HttpResponse("The website is good")
-
-def bad(request):
-    return HttpResponse("The website is a shit")
-
-
 def scan(request):
 	if request.method == 'POST':
 		website = models.WebSite(request.POST)
 		website.siteAddress = request.POST['siteAddress']
 		if website.is_valid():
 			if website.exists():
-				return HttpResponseRedirect('/isUp/good/') # Redirect after POST
+				return render(request, 'isUp/up.html', {
+					'websiteURL': "http://"+str(website.siteAddress)
+				})
 			else:
-				return HttpResponseRedirect('/isUp/bad/') # Redirect after POST
+				#return HttpResponseRedirect('/isUp/bad/') # Redirect after POST
+				return render(request, 'isUp/down.html', {
+					'websiteURL': "http://"+str(website.siteAddress)
+				})
 	else:
 		website = models.WebSite() # An unbound form
 
