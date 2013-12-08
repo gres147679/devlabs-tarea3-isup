@@ -1,4 +1,5 @@
 from django import forms
+import httplib, socket
 
 # Create your models here.
 
@@ -12,6 +13,16 @@ class WebSite(forms.Form):
 	def is_valid(self):
 		return True
 
-	def is_
+
+	def exists(self):
+		try:
+			conn = httplib.HTTPConnection(str(self.siteAddress))
+			conn.request('HEAD', '')
+			response = conn.getresponse()
+			conn.close()
+			return response.status < 500
+		except socket.gaierror,e:
+			return False
+
 	
 	
