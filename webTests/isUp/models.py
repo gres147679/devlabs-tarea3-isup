@@ -1,4 +1,5 @@
 from django import forms
+from django.core.validators import URLValidator
 import httplib, socket
 
 # Create your models here.
