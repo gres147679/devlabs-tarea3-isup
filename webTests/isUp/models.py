@@ -8,7 +8,7 @@ import httplib, socket
 class WebSite(forms.Form):
 
 	'''Address of the WebSite'''
-	siteAddress = forms.CharField(max_length=120,required=True,label="Site address")
+	siteAddress = forms.CharField(max_length=120,required=True,label="")
 
 	def is_valid(self):
 		return True

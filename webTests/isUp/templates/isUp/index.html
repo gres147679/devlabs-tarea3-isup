@@ -1,8 +1,54 @@
-<h1>Is the site up?</h1>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
 
-{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+Name       : Veridical 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20131203
 
-<form action="" method="post">{% csrf_token %}
-{{ website.as_p }}
-<input type="submit" value="Submit" />
+-->
+{% load staticfiles %}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="{% static "isUp/default.css" %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static "isUp/fonts.css" %}" rel="stylesheet" type="text/css" media="all" />
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+</head>
+<body>
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<img src="{% static "isUp/images/devlabs.png" %}" width="200" height="200">
+			<h1><a href="">Test the website!</a></h1>
+			<span>Cause you never know who's wrong: you or them <br> <br>
+				<form action="" method="post">{% csrf_token %}
+				{{ website.as_p }}
+				<input type="submit" value="Submit" />
+			</span> </div>
 </form>
+	</div>
+</div>
+
+<div id="copyright">
+	<div class="title">
+		<h2>Get in touch</h2>
+		<span class="byline">I'm still learning, but you can ask me anything!</span> </div>
+	<ul class="contact">
+		<span class="byline"><a href="mailto:gustavoelkhoury@gmail.com">Gustavo El Khoury</a><span><br>
+		<li><a href="https://twitter.com/Gustav0_EK" class="icon icon-twitter"><span>Twitter</span></a></li>
+		<li><a href="#" class="icon icon-facebook"><span></span></a></li>
+	</ul>
+	<p>Copyright (c) 2013 Sitename.com. All rights reserved. | Photos by <a href="http://fotogrph.com/">Fotogrph</a> | Design by <a href="http://www.freecsstemplates.org/" rel="nofollow">FreeCSSTemplates.org</a>.</p>
+</div>
+</body>
+</html>
