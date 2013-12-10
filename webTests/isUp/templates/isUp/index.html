@@ -33,10 +33,11 @@ Released   : 20131203
 			<h1><a href="">Test the website!</a></h1>
 			<span>Cause you never know who's wrong: you or them <br> <br>
 				<form action="" method="post">{% csrf_token %}
-				{{ website.as_p }}
-				<input type="submit" value="Submit" />
-			</span> </div>
-</form>
+					{{ website.as_p }}
+					<input type="submit" value="Submit" />
+				</form>
+			</span>
+		</div>
 	</div>
 </div>
 
