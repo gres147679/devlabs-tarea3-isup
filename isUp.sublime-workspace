@@ -11,7 +11,7 @@
 			"file": "webTests/isUp/models.py",
 			"settings":
 			{
-				"buffer_size": 556,
+				"buffer_size": 592,
 				"line_ending": "Unix"
 			}
 		},
@@ -19,7 +19,7 @@
 			"file": "webTests/webTests/urls.py",
 			"settings":
 			{
-				"buffer_size": 604,
+				"buffer_size": 600,
 				"line_ending": "Unix"
 			}
 		},
@@ -27,7 +27,7 @@
 			"file": "webTests/isUp/urls.py",
 			"settings":
 			{
-				"buffer_size": 272,
+				"buffer_size": 187,
 				"line_ending": "Windows"
 			}
 		},
@@ -35,7 +35,7 @@
 			"file": "webTests/isUp/views.py",
 			"settings":
 			{
-				"buffer_size": 934,
+				"buffer_size": 944,
 				"line_ending": "Unix"
 			}
 		},
@@ -51,8 +51,40 @@
 			"file": "webTests/isUp/templates/isUp/index.html",
 			"settings":
 			{
-				"buffer_size": 217,
+				"buffer_size": 2350,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "webTests/isUp/templates/isUp/up.html",
+			"settings":
+			{
+				"buffer_size": 2206,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "webTests/isUp/templates/isUp/down.html",
+			"settings":
+			{
+				"buffer_size": 2215,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/gustav0/web/default.css",
+			"settings":
+			{
+				"buffer_size": 12583,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/home/gustav0/web/fonts.css",
+			"settings":
+			{
+				"buffer_size": 20070,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -80,6 +112,8 @@
 	},
 	"file_history":
 	[
+		"/home/gustav0/web/index.html",
+		"/home/gustav0/web/default.css"
 	],
 	"find":
 	{
@@ -97,6 +131,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"twitter",
+			"twitt",
+			"twit",
+			"access",
 			"Event ",
 			"Evento",
 			"Event"
@@ -117,7 +155,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -125,20 +163,21 @@
 					"file": "webTests/isUp/models.py",
 					"settings":
 					{
-						"buffer_size": 556,
+						"buffer_size": 592,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								523,
-								523
+								243,
+								243
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage"
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -151,15 +190,15 @@
 					"file": "webTests/webTests/urls.py",
 					"settings":
 					{
-						"buffer_size": 604,
+						"buffer_size": 600,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								597,
-								597
+								572,
+								572
 							]
 						],
 						"settings":
@@ -177,15 +216,15 @@
 					"file": "webTests/isUp/urls.py",
 					"settings":
 					{
-						"buffer_size": 272,
+						"buffer_size": 187,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								194,
-								194
+								187,
+								187
 							]
 						],
 						"settings":
@@ -203,15 +242,15 @@
 					"file": "webTests/isUp/views.py",
 					"settings":
 					{
-						"buffer_size": 934,
+						"buffer_size": 944,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								350,
-								350
+								324,
+								324
 							]
 						],
 						"settings":
@@ -255,15 +294,15 @@
 					"file": "webTests/isUp/templates/isUp/index.html",
 					"settings":
 					{
-						"buffer_size": 217,
+						"buffer_size": 2350,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								118,
-								118
+								932,
+								932
 							]
 						],
 						"settings":
@@ -272,6 +311,112 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "webTests/isUp/templates/isUp/up.html",
+					"settings":
+					{
+						"buffer_size": 2206,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1771,
+								1771
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 468.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "webTests/isUp/templates/isUp/down.html",
+					"settings":
+					{
+						"buffer_size": 2215,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2191,
+								2191
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 738.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/home/gustav0/web/default.css",
+					"settings":
+					{
+						"buffer_size": 12583,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5511,
+								5511
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5742.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/home/gustav0/web/fonts.css",
+					"settings":
+					{
+						"buffer_size": 20070,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10617,
+								10617
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3240.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
